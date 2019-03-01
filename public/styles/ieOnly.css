@@ -1,0 +1,99 @@
+@charset "UTF-8";
+* {margin: 0px; padding: 0px;}
+nav {display: block;}
+.mA {margin: 0px auto;}
+.fL {float: left;}
+.fR {float: right;}
+.tC {text-align: center;}
+.tU {text-decoration: underline;}
+.w50 {width: 50%;}
+.bg1 {background-color: #007C17;}
+.clear {clear: both;}
+.lsI {list-style: inside;}
+nav {display: block;}
+body {color: white; font-size: 18px; background-color: #B3AC9A;}
+a img {border: none;}
+img {border: 0;}
+@media only screen and (min-width: 501px) {
+body {width: 1000px; margin: 5px auto 30px;}
+#wrapper {min-height: 500px; margin: 0px 0px 30px; padding: 0px 0px 5px;}
+#header {border-radius: 10px 10px 0px 0px;}
+#textWrap {width: 750px; min-height: 350px; color: #FFF; box-shadow: 10px 10px 20px #184800; border-radius: 0px 0px 10px 10px;}
+#text {padding: 25px;}
+#text a {color: black;}
+#text a:visitied {color: black;}
+#side {width: 230px; box-shadow: 10px 10px 20px #184800; border-radius: 0px 0px 10px 10px; padding: 5px;}
+#side ul {list-style: none;}
+#side li {margin: 0px 0px 0px 5px;}
+
+h2 {margin: 5px 0px;}
+
+#links {width: 1000px; line-height: 1em; font-size: 24px; text-shadow: -1px 0 black, 0 1px gray; margin: 0px auto;}
+#links li {background-color: #CCFFBB; border: groove 2px; padding: 10px; float: left; height: 1em; width: 176px;}
+#links a {color: #2C6700;}
+.link {text-align: center; list-style: none;}
+.link:hover {cursor: pointer; text-shadow: 0 -1px black, 1px 0 gray;}
+.linkl {text-align: center; list-style: none;}
+.linkl:hover {cursor: pointer; text-shadow: 0 -1px black, 1px 0 gray;}
+#links li:hover {background-color: white;}
+
+#treetrim {float: left; padding-right: 10px; width: 200px; height: 200px;}
+#chaut {width: 300px; float: left;}
+#chautcol {text-decoration: underline;}
+#catt {width: 300px; float: left;}
+#cattcol {text-decoration: underline;}
+
+.h3about {text-align: left;}
+
+#h3tree {margin: 10px 0px;}
+
+#springLand {text-align: left;}
+#winterLand {text-align: left;}
+
+.number {margin: 5px 0px}
+.conHalf {margin: 5px 0px; text-align: center;}
+
+#footer {width: 100%; margin: 5px 0px;}
+.footlinks {width: 125px; border-left: groove 1px; display: inline-block; margin: auto 0px;}
+#footinfo {color: blue;}
+}
+@media only screen and (max-width: 500px) {
+body {width: 100%; margin: 0px auto; min-width: 460px;}
+#wrapper {min-height: 100%; margin: 0px 0px 30px 0px; padding: 0px 0px 5px 0px;}
+#side {display: none;}
+
+#header {clear: both;}
+#logo {display: none;}
+h2 {margin: 5px 0px 5px 0px;}
+#address {width: 100%; text-align: center;}
+.clear {clear: both;}
+
+#links {width: 100%; line-height: 1.5em; text-shadow: -1px 0 black, 0 1px gray; margin: 0px auto;}
+#links li {background-color: #CCFFBB; border: groove 2px; padding: 10px; height: 1.5em;}
+#links a {color: #2C6700;}
+.link {text-align: center; list-style: none;}
+.link:hover {cursor: pointer; text-shadow: 0 -1px black, 1px 0 gray;}
+.linkl {text-align: center; list-style: none;}
+.linkl:hover {cursor: pointer; text-shadow: 0 -1px black, 1px 0 gray;}
+#links li:hover {background-color: white;}
+#links li:active {background-color: brown;}
+
+#textWrap {text-align: justified; width: 100%;}
+#text {padding: 10px;}
+#treetrim {display: none;}
+
+#h3tree {margin: 10px 0px; text-align: left; text-decoration: underline;}
+#treetext {text-align: left; color: white; font-size: 20px;}
+
+#springLand {text-align: left;}
+#winterLand {text-align: left;}
+.h3land {margin: 0px;}
+.h5land {margin: 0px;}
+
+.number {margin: 5px 0px;}
+#coninfo {margin: 5px 0px;}
+
+#footer {width: 100%; text-align: center; margin: 5px 0px;}
+.footlinks {width: auto; border-left: groove 1px; display: inline-block; margin: auto 0px;}
+#footinfo {color: blue;}
+}
