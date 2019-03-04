@@ -1,0 +1,44 @@
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $primary-color;
+
+  #header-left {
+    flex: 0 1 auto;
+    max-height: 150px;
+  }
+
+  #header-right {
+    flex: 1 1 auto;
+    text-align: center;
+    align-self: center;
+  }
+
+  nav {
+    display: flex;
+    flex: 1 1 100%;
+    background-color: white;
+
+    a {
+      color: $primary-color;
+      flex: 1 0 auto;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 1.2em;
+
+      &.active {
+        color: $primary-font;
+        background-color: lighten($primary-color, 10%);
+      }
+
+      &:not(:first-child) {
+        border-left: 1px solid black;
+      }
+
+      &:hover {
+        color: $primary-font;
+        background-color: lighten($primary-color, 10%);
+      }
+    }
+  }
+}

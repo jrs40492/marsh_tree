@@ -1,0 +1,59 @@
+@import 'variables';
+
+@import 'layout';
+@import 'header';
+@import 'footer';
+
+@import 'lists';
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $primary-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 8px 0 0 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+.align-center {
+  text-align: center;
+}
+
+p {
+  padding: 10px 0 0 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: $secondary-color;
+  }
+}

@@ -1,26 +1,17 @@
-#header.bg1
-  .clear
-    .fL.w50
-      a(href="/")
-        img#marshLogo(src="/images/marshlogo.png" alt="Marsh Tree and Landscaping Logo" title="Marsh Tree and Landscaping Logo")
+#header
+  #header-left
+    a(href="/")
+      img#logo(src="/images/marshlogo.png" alt="Marsh Tree and Landscaping Logo" title="Marsh Tree and Landscaping Logo")
 
-    .fR.tC.w50
-      h4.number Over 25 years of tree and landscaping experience.
-      h4.number Call today for a free estimate!
-      h4.number(itemprop="tel") Office: 555-555-5555
-      h4.number(itemprop="tel") Cell: 555-555-5555
+  #header-right
+    h5.number Over 25 years of tree and landscaping experience.
+    h5.number Call today for a free estimate!
+    h5.number(itemprop="tel") Office: 555-555-5555
+    h5.number(itemprop="tel") Cell: 555-555-5555
 
-  nav#links.clear
-    .clear
-    ul
-      a.mainLink(href="/" itemprop="url")
-        li.link Home
-      a.mainLink(href="/about" itemprop="url")
-        li.link About Us
-      a.mainLink(href="/tree_services" itemprop="url")
-        li.link Tree Services
-      a.mainLink(href="/snow_services" itemprop="url")
-        li.link Snow Services
-      a.mainLink(href="/contact" itemprop="url")
-        li.link Contact Us
-    .clear
+  nav
+    a(href="/" itemprop="url" class=link === '' ? 'active' : '') Home
+    a(href="/about" itemprop="url" class=link === 'about' ? 'active' : '') About Us
+    a(href="/tree_services" itemprop="url" class=link === 'tree' ? 'active' : '') Tree Services
+    a(href="/snow_services" itemprop="url" class=link === 'snow' ? 'active' : '') Snow Services
+    a(href="/contact" itemprop="url" class=link === 'contact' ? 'active' : '') Contact Us
