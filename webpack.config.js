@@ -1,30 +1,27 @@
 const path = require('path');
-const ETP = require('extract-text-webpack-plugin');
+
+const uglifyjs = require('uglifyjs-webpack-plugin');
+const minicss = require('mini-css-extract-plugin');
+const optimizecss = require('optimize-css-assets-webpack-plugin');
 
 module.exports = [
   {
-    entry: './src/js/index.js',
-    output: {
-      filename: 'main.js',
-      path: path.resolve(__dirname, 'dist/js')
-    },
+    entry: './src/styles/global.scss',
     module: {
       rules: [
         {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['babel-preset-env']
-            }
-          }
-        },
-        {
-          test: /\.scss$/,
-          use: ['style-loader', 'css-loader', 'sass-loader']
+          test: /\.(sa|sc|c)ss$/,
+          use: [minicss.loader, 'css-loader', 'sass-loader', 'postcss-loader']
         }
       ]
+    },
+    plugins: [
+      new minicss({
+        filename: '/styles/[name].css'
+      })
+    ],
+    optimization: {
+      minimizer: [new uglifyjs(), new optimizecss({})]
     }
   }
 ];
